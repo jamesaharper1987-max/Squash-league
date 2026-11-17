@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Squash League HQ: James v Mic, and the lower leagues</title>
+  <meta name="description" content="Official results of two deeply unserious squash rivalries in Berlin.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='34' fill='%23111'/><circle cx='38' cy='40' r='5' fill='%23e8cc8e'/><circle cx='62' cy='40' r='5' fill='%23e8cc8e'/></svg>">
+  <link rel="preload" href="fonts/bowlby-one-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/DSEG7Classic-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to results</a>
+
+  <header class="topbar">
+    <a class="brand" href="#main">Squash League HQ</a>
+    <nav aria-label="Sections">
+      <a href="#main-event">Main event</a>
+      <a href="#lower-leagues">Lower leagues</a>
+    </nav>
+    <a class="btn btn-report" data-form-link href="#report">Report a result</a>
+  </header>
+
+  <main id="main">
+    <!-- ═══════════ THE MAIN EVENT ═══════════ -->
+    <section class="main-event" id="main-event" aria-labelledby="me-title">
+      <div class="wall">
+        <div class="wall-inner">
+          <div class="hero-text">
+          <p class="kicker">The main event, contested at a level the lower leagues can only look down on</p>
+          <h1 id="me-title"><span>James</span> <span><span class="v">v</span>Mic</span></h1>
+          <p class="deck" id="me-deck">Loading the latest humiliation…</p>
+          </div>
+          <div class="hero-board">
+
+          <div class="board" id="me-board" role="img" aria-label="Scoreboard loading">
+            <div class="board-sticker">Top<br>Squash</div>
+            <div class="board-rows">
+              <div class="board-row">
+                <span class="seg14" data-name="0">JAMES</span>
+                <span class="seg7 big" data-score="0"><i>88</i><b>0</b></span>
+              </div>
+              <div class="board-row">
+                <span class="seg14" data-name="1">MIC</span>
+                <span class="seg7 big" data-score="1"><i>88</i><b>0</b></span>
+              </div>
+            </div>
+            <div class="board-side">
+              <div><span class="board-label">Sessions drawn</span><span class="seg7 red" id="me-draws"><i>8</i><b>0</b></span></div>
+              <div><span class="board-label">Games, all time</span><span class="seg7" id="me-games"><i>88-88</i><b>0-0</b></span></div>
+            </div>
+          </div>
+          <p class="board-caption">Sessions won. A session is however many games you manage before someone needs a sit-down.</p>
+          </div>
+        </div>
+        <div class="tin" aria-hidden="true"></div>
+      </div>
+
+      <div class="me-detail">
+        <div class="tape" aria-label="Tale of the tape">
+          <figure class="fighter">
+            <img class="mugshot-img" src="img/james.jpg" alt="James, covered head to toe in Holi powder, taking a mirror selfie" width="640" height="800">
+            <figcaption>
+              <h2 class="fighter-name">James</h2>
+              <dl class="facts" id="me-james"></dl>
+            </figcaption>
+          </figure>
+          <figure class="fighter">
+            <img class="mugshot-img" src="img/mic.jpg" alt="Mic in a German-flag shirt and German-flag sunglasses" width="640" height="800">
+            <figcaption>
+              <h2 class="fighter-name">Mic</h2>
+              <dl class="facts" id="me-mic"></dl>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="sessions">
+          <h3>Every session, in order</h3>
+          <ol class="session-list" id="me-sessions"></ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ RELEGATION LINE ═══════════ -->
+    <div class="relegation" role="separator">
+      <span>Short line. Everything below it is the lower leagues.</span>
+    </div>
+
+    <!-- ═══════════ LOWER LEAGUES ═══════════ -->
+    <section class="lower" id="lower-leagues" aria-labelledby="ll-title">
+      <div class="ll-head">
+        <div class="ll-intro">
+          <h2 id="ll-title">The Jigs-Lah Trophy</h2>
+          <p class="ll-sub">The race for the Golden Headband. Jack (Jigs) against Kevin (Lah), best of five, twice a week, with notes.</p>
+          <p class="deck small" id="ll-deck"></p>
+
+          <div class="controls" role="group" aria-label="Filter results">
+            <div class="seasons" id="ll-seasons" role="radiogroup" aria-label="Season"></div>
+            <label class="asterisk-toggle">
+              <input type="checkbox" id="ll-asterisk">
+              <span>Count asterisk matches <small>(played ill, hungover, heartbroken or on deadline)</small></span>
+            </label>
+          </div>
+
+          <div class="board board-small" id="ll-board" role="img" aria-label="Scoreboard">
+            <div class="board-sticker">Top<br>Squash</div>
+            <div class="board-rows">
+              <div class="board-row">
+                <span class="seg14">LAH</span>
+                <span class="seg7 big" data-ll="lah"><i>888</i><b>0</b></span>
+              </div>
+              <div class="board-row">
+                <span class="seg14">JIGS</span>
+                <span class="seg7 big" data-ll="jigs"><i>888</i><b>0</b></span>
+              </div>
+            </div>
+            <div class="board-side">
+              <div><span class="board-label">Games</span><span class="seg7" id="ll-games"><i>888-888</i><b>0-0</b></span></div>
+              <div><span class="board-label">Unfinished</span><span class="seg7 red" id="ll-unfinished"><i>88</i><b>0</b></span></div>
+            </div>
+          </div>
+          <p class="board-caption">Match wins. A match only counts once someone reaches three games.</p>
+        </div>
+
+        <figure class="kneel">
+          <img src="img/the-kneel.jpg" alt="Jigs on one knee on court, arms out, before Lah, who is holding his head" width="665" height="1182">
+          <figcaption>Jigs pays his respects to the holder of the Golden Headband.</figcaption>
+        </figure>
+      </div>
+
+      <div class="players">
+        <article class="player lah">
+          <img src="img/lah-ready.jpg" alt="Lah in a blue shirt in the ready position" width="768" height="1024" loading="lazy">
+          <div class="player-body">
+            <h3>Lah <small>Kevin</small></h3>
+            <p class="player-tag">Reigning holder of the Golden Headband. Appeals a lot.</p>
+            <dl class="facts" id="ll-lah"></dl>
+          </div>
+        </article>
+        <article class="player jigs">
+          <img src="img/jigs-lunge.jpg" alt="Jigs in a white shirt lunging for the ball" width="768" height="1024" loading="lazy">
+          <div class="player-body">
+            <h3>Jigs <small>Jack</small></h3>
+            <p class="player-tag">Plucky challenger. Owner of a new cross-court attacking shot.</p>
+            <dl class="facts" id="ll-jigs"></dl>
+          </div>
+        </article>
+      </div>
+
+      <div class="panel chart-panel">
+        <h3>The gap</h3>
+        <p class="panel-sub">Running total of match wins, one step per finished match.</p>
+        <div class="legend" aria-hidden="true">
+          <span class="key lah">Lah</span><span class="key jigs">Jigs</span>
+        </div>
+        <div class="chart" id="ll-chart"></div>
+      </div>
+
+      <div class="stats-row" id="ll-oddities"></div>
+
+      <div class="panel">
+        <h3>Every Jigs win, preserved for history</h3>
+        <p class="panel-sub">They're rare, so each one gets a plaque.</p>
+        <ol class="plaques" id="ll-plaques"></ol>
+      </div>
+
+      <div class="panel">
+        <h3>Dispatches from the dressing room</h3>
+        <p class="panel-sub">Match notes, newest first, as written by the players. Unverified, unedited, unhinged.</p>
+        <ol class="dispatches" id="ll-dispatches"></ol>
+        <button class="btn btn-quiet" id="ll-more" type="button" hidden>Show every dispatch</button>
+      </div>
+
+      <div class="gallery" aria-label="Photos">
+        <figure class="g-wide"><img src="img/rally-from-behind.jpg" alt="Both players watching the front wall mid-rally" width="1182" height="665" loading="lazy"><figcaption>Both men watching the front wall, which is winning.</figcaption></figure>
+        <figure><img src="img/lah-volley.jpg" alt="Lah airborne, stretching for a volley" width="768" height="1024" loading="lazy"><figcaption>Lah, airborne, reaching for a ball he'll later say was a let.</figcaption></figure>
+        <figure><img src="img/jigs-charge.jpg" alt="A blurred Jigs charging towards the camera" width="768" height="1024" loading="lazy"><figcaption>Jigs arrives at the T. The ball left some time ago.</figcaption></figure>
+        <figure><img src="img/jigs-backswing.jpg" alt="Jigs mid-backswing, Lah waiting in the front court" width="768" height="1024" loading="lazy"><figcaption>Jigs loads up the famous new cross-court attacking shot.</figcaption></figure>
+        <figure><img src="img/lah-dig.jpg" alt="Lah bending low to dig the ball out" width="768" height="1024" loading="lazy"><figcaption>Lah digs one out of the corner, low and slightly desperate.</figcaption></figure>
+        <figure class="g-wide"><img src="img/lah-between-points.jpg" alt="Lah walking back between points with Jigs behind him" width="1182" height="665" loading="lazy"><figcaption>Between points. The scoreboard says 7–3; the body language says more.</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- ═══════════ REPORT ═══════════ -->
+    <section class="report" id="report" aria-labelledby="rp-title">
+      <h2 id="rp-title">Just played?</h2>
+      <p>Report the result on the official form. It goes straight into the league's records, and this page picks it up within a minute or two.</p>
+      <p class="report-fine">Nobody can edit the records directly, so a mistyped score won't break anything. If one sneaks through, tell James and he'll strike it from the record.</p>
+      <a class="btn btn-big" data-form-link href="#report">Report a result</a>
+      <p class="report-missing" id="rp-missing" hidden>The results form isn't connected yet. James: see README.md.</p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p id="data-status">Loading results…</p>
+    <p>Squash League HQ is not affiliated with any governing body, squash club, or common sense.</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="data/snapshot.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
